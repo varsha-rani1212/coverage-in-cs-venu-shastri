@@ -19,6 +19,6 @@ class Calculate
   public static void main(string[] args)
   {
     Calculate obj = new Calculate();
-    obj.add();  
+    Console.WriteLine(obj.add());  
   }
 }
