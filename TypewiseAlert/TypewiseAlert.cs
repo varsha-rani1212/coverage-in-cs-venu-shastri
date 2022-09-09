@@ -80,7 +80,7 @@ namespace TypewiseAlert
           break;
         case BreachType.TOO_HIGH:
           Console.WriteLine("To: {}\n", recepient);
-          Console.WriteLine("Hi, the temperature is too high\n");
+          Console.WriteLine("Hi, the temperature is too high \n");
           break;
         case BreachType.NORMAL:
           break;
