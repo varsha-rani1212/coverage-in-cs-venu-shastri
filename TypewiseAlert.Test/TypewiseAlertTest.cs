@@ -14,7 +14,7 @@ namespace TypewiseAlert.Test
       Assert.True(TypewiseAlert.inferBreach(50, 10, 45) ==
            TypewiseAlert.BreachType.TOO_HIGH);
       
-      checkAndAlert(TO_CONTROLLER,{PASSIVE_COOLING,"tata"}, 123);
+      //checkAndAlert(TO_CONTROLLER,{PASSIVE_COOLING,"tata"}, 123);
     }
   }
 }
