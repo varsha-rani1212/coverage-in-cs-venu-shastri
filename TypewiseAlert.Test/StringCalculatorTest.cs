@@ -8,11 +8,17 @@ void GivenEmptyString0isExpected()
 
 class Calculate
 {
-    static int add(string data)
+  int add(string data)
     {
       if(data == "")
         return 0;
       
       throw new NotImplementedException();
     }
+  
+  public static void main(string[] args)
+  {
+    Calculate obj = new Calculate();
+    obj.add();  
+  }
 }
