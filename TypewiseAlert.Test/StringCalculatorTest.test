@@ -1,24 +1,31 @@
-void GivenEmptyString0isExpected()
-{
-  int expectedValue = Assert.True(TypewiseAlert.add("") == TypewiseAlert.0)
-}
+using System;
 
+//Test implementation
+void checkCardlength()
+{
+  int expectedValue = Assert.True(TypewiseAlert.checkLengthOfCardNumber() == TypewiseAlert.1)
+}
 
 //code implementation
 
-class Calculate
+class LuhnAlgorithm
 {
-  int add(string data)
+  int checkLengthOfCardNumber(string data)
     {
-      if(data == "")
-        return 0;
+      if(data.Length == 16)
+        return 1;
+        
+       return 0;
       
-      throw new NotImplementedException();
+     // throw new NotImplementedException();
     }
   
   public static void main(string[] args)
   {
     Calculate obj = new Calculate();
-    Console.WriteLine(obj.add());  
+    Console.WriteLine(obj.checkLengthOfCardNumber(1234567891234567));  
   }
 }
+
+
+
