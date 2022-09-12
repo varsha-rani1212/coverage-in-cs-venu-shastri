@@ -25,26 +25,23 @@ namespace TypewiseAlert
     };
     public static BreachType classifyTemperatureBreach(
         CoolingType coolingType, double temperatureInC) {
-      int lowerLimit = 0;
-      int upperLimit = 0;
-      switch(coolingType) {
-        case CoolingType.PASSIVE_COOLING:
-          lowerLimit = 0;
-          upperLimit = 35;
-          return inferBreach(temperatureInC, lowerLimit, upperLimit);
-          break;
-        case CoolingType.HI_ACTIVE_COOLING:
-          lowerLimit = 0;
-          upperLimit = 45;
-          return inferBreach(temperatureInC, lowerLimit, upperLimit);
-          break;
-        case CoolingType.MED_ACTIVE_COOLING:
-          lowerLimit = 0;
-          upperLimit = 40;
-          return inferBreach(temperatureInC, lowerLimit, upperLimit);
-          break;
+    
+      if(coolingType == CoolingType.PASSIVE_COOLING)
+      {
+        return inferBreach(temperatureInC, 0, 35);
+      }
+      
+      if(coolingType == CoolingType.HI_ACTIVE_COOLING)
+      {
+        return inferBreach(temperatureInC, 0, 45);
+      }
+      
+      if(coolingType == CoolingType.MED_ACTIVE_COOLING)
+      {
+        return inferBreach(temperatureInC, 0, 40);
       }
     }
+    
     public enum AlertTarget{
       TO_CONTROLLER,
       TO_EMAIL
