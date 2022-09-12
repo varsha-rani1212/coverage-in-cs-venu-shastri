@@ -9,6 +9,12 @@ void checkCardlength()
    Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("1234567891234567") == LuhnAlgorithm."Correct"); 
 }
 
+void checkCardValidity()
+{
+   Assert.True(LuhnAlgorithm.checkLuhn("2222420000001113") == LuhnAlgorithm."Valid");
+   Assert.True(LuhnAlgorithm.checkLuhn("1234567891234567") == LuhnAlgorithm."Invalid");
+}
+
 
 //code implementation
 
