@@ -71,14 +71,13 @@ namespace TypewiseAlert
       const ushort header = 0xfeed;
       Console.WriteLine("{} : {}\n", header, breachType);
     }
+    
     public static void sendToEmail(BreachType breachType) {
-      string recepient = "a.b@c.com";
+      string recepient = "a.b@c.com";  
       switch(breachType) {
         case BreachType.TOO_LOW:
           break;
         case BreachType.TOO_HIGH:
-          break;
-        case BreachType.NORMAL:
           break;
       }
     }
