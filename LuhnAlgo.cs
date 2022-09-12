@@ -28,18 +28,11 @@ public static string checkLuhn(String cardNo)
   }
   
   public static int checkLengthOfCardNumber(string cardNo){ 
-  
-     if(cardNo.Length == 0)
-     return "Empty";
-     
-    if(cardNo.Length < 16)
-     return "LessThan16";
-    
-    if(cardNo.Length > 16)
-     return "MoreThan16";
      
     if(cardNo.Length == 16)
      return "Correct";
+   
+   return "NotCorrect";
   }
   
    public static public void Main()
