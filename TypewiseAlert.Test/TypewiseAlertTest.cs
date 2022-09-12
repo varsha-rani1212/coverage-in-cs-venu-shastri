@@ -17,9 +17,6 @@ namespace TypewiseAlert.Test
       Assert.True(TypewiseAlert.inferBreach(15, 10, 20) ==
            TypewiseAlert.BreachType.NORMAL);
       
-      Assert.True(TypewiseAlert.classifyTemperatureBreach(CoolingType.PASSIVE_COOLING, 15) ==
-           TypewiseAlert.BreachType.NORMAL);
-      
      // Assert.True(TypewiseAlert.sendToEmail(BreachType.TOO_LOW));
       
       //TypewiseAlert.sendToController(TOO_LOW);
