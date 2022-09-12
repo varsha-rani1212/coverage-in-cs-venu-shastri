@@ -16,8 +16,6 @@ namespace TypewiseAlert.Test
       
       Assert.True(TypewiseAlert.inferBreach(15, 10, 20) ==
            TypewiseAlert.BreachType.NORMAL);
-      
-      Assert.AreEqual("Hello","Hello");
     }
   }
 }
