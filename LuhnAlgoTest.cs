@@ -9,9 +9,9 @@ namespace LuhnTest{
 
  void checkCardlength()
  {
-   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("") == LuhnAlgorithm."Empty");
-   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("123456789123456756778") == LuhnAlgorithm."LessThan16");
-   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("1234567") == LuhnAlgorithm."LessThan16");
+   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("") == LuhnAlgorithm."NotCorrect");
+   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("123456789123456756778") == LuhnAlgorithm."NotCorrect");
+   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("1234567") == LuhnAlgorithm."NotCorrect");
    Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("1234567891234567") == LuhnAlgorithm."Correct"); 
   }
 
