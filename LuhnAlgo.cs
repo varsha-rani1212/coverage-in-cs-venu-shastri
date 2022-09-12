@@ -3,7 +3,7 @@ using System;
  
 public class LuhnAlgorithm {
     
-public static string checkLuhn(String cardNo)
+public static bool checkLuhn(String cardNo)
 {
     int cardNumberDigitSum = 0;
     bool isSecond = false;
@@ -21,10 +21,7 @@ public static string checkLuhn(String cardNo)
     }
     bool result = (nSum % 10 == 0);
     
-    if(result == true)
-     return "Valid";
-    else
-     return "Invalid";
+     return result;
   }
   
   public static int checkLengthOfCardNumber(string cardNo){ 
@@ -38,7 +35,7 @@ public static string checkLuhn(String cardNo)
    public static public void Main()
     {
         String cardNo = "1234567891234567";
-        string cardNoValidity = false;
+        bool cardNoValidity = false;
         string lengthOfCardNumberResult = checkLengthOfCardNumber(cardNo);
         
         if(lengthOfCardNumberResult == "Correct")
