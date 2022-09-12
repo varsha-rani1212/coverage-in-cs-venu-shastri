@@ -1,0 +1,16 @@
+using System;
+
+//Test implementation
+void checkCardlength()
+{
+   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("") == LuhnAlgorithm."Empty");
+   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("123456789123456756778") == LuhnAlgorithm."LessThan16");
+   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("1234567") == LuhnAlgorithm."LessThan16");
+   Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("1234567891234567") == LuhnAlgorithm."Correct"); 
+}
+
+void checkCardValidity()
+{
+   Assert.True(LuhnAlgorithm.checkLuhn("2222420000001113") == LuhnAlgorithm."Valid");
+   Assert.True(LuhnAlgorithm.checkLuhn("1234567891234567") == LuhnAlgorithm."Invalid");
+}
