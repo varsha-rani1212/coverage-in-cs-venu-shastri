@@ -3,7 +3,8 @@ using System;
 //Test implementation
 void checkCardlength()
 {
-  int expectedValue = Assert.True(TypewiseAlert.checkLengthOfCardNumber() == TypewiseAlert.1)
+  int expectedValue = Assert.True(TypewiseAlert.checkLengthOfCardNumber("1234567891234567") == TypewiseAlert.1);
+  int expectedValue = Assert.True(TypewiseAlert.checkLengthOfCardNumber("1234567") == TypewiseAlert.0);
 }
 
 //code implementation
@@ -23,7 +24,7 @@ class LuhnAlgorithm
   public static void main(string[] args)
   {
     Calculate obj = new Calculate();
-    Console.WriteLine(obj.checkLengthOfCardNumber(1234567891234567));  
+    Console.WriteLine(obj.checkLengthOfCardNumber("1234567891234567");  
   }
 }
 
