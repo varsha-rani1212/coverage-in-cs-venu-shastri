@@ -31,17 +31,19 @@ namespace TypewiseAlert
         case CoolingType.PASSIVE_COOLING:
           lowerLimit = 0;
           upperLimit = 35;
+          return inferBreach(temperatureInC, lowerLimit, upperLimit);
           break;
         case CoolingType.HI_ACTIVE_COOLING:
           lowerLimit = 0;
           upperLimit = 45;
+          return inferBreach(temperatureInC, lowerLimit, upperLimit);
           break;
         case CoolingType.MED_ACTIVE_COOLING:
           lowerLimit = 0;
           upperLimit = 40;
+          return inferBreach(temperatureInC, lowerLimit, upperLimit);
           break;
       }
-      return inferBreach(temperatureInC, lowerLimit, upperLimit);
     }
     public enum AlertTarget{
       TO_CONTROLLER,
