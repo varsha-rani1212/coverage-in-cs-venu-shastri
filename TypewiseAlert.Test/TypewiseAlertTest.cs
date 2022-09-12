@@ -19,7 +19,7 @@ namespace TypewiseAlert.Test
       
      // Assert.True(TypewiseAlert.sendToEmail(BreachType.TOO_LOW));
       
-      TypewiseAlert.sendToController(BreachType.TOO_LOW);
+      TypewiseAlert.sendToController(TOO_LOW);
       
       
       //checkAndAlert(TO_CONTROLLER,{PASSIVE_COOLING,"tata"}, 123);
