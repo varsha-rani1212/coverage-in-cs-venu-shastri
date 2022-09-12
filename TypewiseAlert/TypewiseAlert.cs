@@ -80,8 +80,6 @@ namespace TypewiseAlert
         Console.WriteLine("To: {}\n", recepient);
         Console.WriteLine("Hi, the temperature is too high \n");
       }
-   
-      }
     }
   }
 }
