@@ -3,7 +3,7 @@ using System;
 //Test implementation
 void checkCardlength()
 {
-  int expectedValue = Assert.True(TypewiseAlert.checkLengthOfCardNumber("") == TypewiseAlert."Empty");
+  int expectedValue = Assert.True(LuhnAlgorithm.checkLengthOfCardNumber("") == LuhnAlgorithm."Empty");
   int expectedValue2 = Assert.True(TypewiseAlert.checkLengthOfCardNumber("123456789123456756778") == TypewiseAlert."LessThan16");
   int expectedValue3 = Assert.True(TypewiseAlert.checkLengthOfCardNumber("1234567") == TypewiseAlert."LessThan16");
   int expectedValue4 = Assert.True(TypewiseAlert.checkLengthOfCardNumber("1234567891234567") == TypewiseAlert."Correct"); 
