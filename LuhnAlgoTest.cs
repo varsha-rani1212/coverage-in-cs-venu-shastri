@@ -17,8 +17,8 @@ namespace LuhnTest{
 
   void checkCardValidity()
   {
-   Assert.True(LuhnAlgorithm.checkLuhn("2222420000001113") == LuhnAlgorithm."Valid");
-   Assert.True(LuhnAlgorithm.checkLuhn("1234567891234567") == LuhnAlgorithm."Invalid");
+   Assert.True(LuhnAlgorithm.checkLuhn("2222420000001113") == LuhnAlgorithm.true);
+   Assert.True(LuhnAlgorithm.checkLuhn("1234567891234567") == LuhnAlgorithm.false);
   }
 
  }
