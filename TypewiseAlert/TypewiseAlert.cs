@@ -30,13 +30,11 @@ namespace TypewiseAlert
       {
         return inferBreach(temperatureInC, 0, 35);
       }
-      
-      if(coolingType == CoolingType.HI_ACTIVE_COOLING)
+      else if(coolingType == CoolingType.HI_ACTIVE_COOLING)
       {
         return inferBreach(temperatureInC, 0, 45);
       }
-      
-      if(coolingType == CoolingType.MED_ACTIVE_COOLING)
+      else 
       {
         return inferBreach(temperatureInC, 0, 40);
       }
